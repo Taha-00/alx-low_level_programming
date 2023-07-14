@@ -11,7 +11,7 @@ int main(void)
 	int a = 48;
 	char b = 'a';
 
-	while (a < 57)
+	while (a <= 57)
 	{
 		putchar(a);
 		a++;
