@@ -46,8 +46,16 @@ int main(void)
 		else if (j != 57)
 		{
 			j++;
+			if (j == 57)
+			{
+				k = i + 1;
+				l = 48;
+			}
+			else
+			{
 			k = i;
 			l = j + 1;
+			}
 		}
 		else
 		{
