@@ -17,27 +17,24 @@ int main(void)
 		j = i;
 		while (j <= 57)
 		{
-			if (j != i)
+			k = j;
+			while (k <= 57)
 			{
-				k = j;
-				while (k <= 57)
-				{		
-					if (k != j && k != i)
+				if (i != j && k != j && k != i)
+				{
+					putchar(i);
+					putchar(j);
+					putchar(k);
+					if (i == 55 && j == 56 && k == 57)
 					{
-						putchar(i);
-						putchar(j);
-						putchar(k);
-						if (i == 55 && j == 56 && k == 57)
-						{
-						}
-						else
-						{
-							putchar(',');
-							putchar(' ');
-						}
 					}
-					k++;
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
+				k++;
 			}
 			j++;
 		}
