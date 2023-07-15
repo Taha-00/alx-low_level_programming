@@ -18,7 +18,7 @@ int main(void)
 	{
 		if (k > i || l > j)
 		{
- 			putchar(i);
+			putchar(i);
 			putchar(j);
 			putchar(' ');
 			putchar(k);
