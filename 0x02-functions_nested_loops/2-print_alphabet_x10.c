@@ -2,7 +2,7 @@
 /* more headers goes there */
 
 /**
- * print_alphabet - a function
+ * print_alphabet_x10 - a function
  *
  * Return: 0
  */
