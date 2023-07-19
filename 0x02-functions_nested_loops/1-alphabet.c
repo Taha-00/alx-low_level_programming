@@ -7,15 +7,15 @@
  * Return: 0
  */
 
-/* int _putchar(char c); */
+int _putchar(char c);
 
 void print_alphabet(void)
 {
 	char a = 'a';
-	while(a < 26)
+
+	while (a < 26)
 	{
 		_putchar(a);
 	}
 	_putchar('\n');
-	return (0);
 }
