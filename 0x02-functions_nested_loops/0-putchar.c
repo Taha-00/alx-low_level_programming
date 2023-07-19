@@ -4,6 +4,7 @@
 /**
  * main - calls a function
  *
+ * @c: is the character to be printed
  * Return: 0
  */
 
