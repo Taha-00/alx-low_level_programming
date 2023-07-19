@@ -3,7 +3,7 @@
 
 /**
  * print_alphabet - a function
- * @a: is the character to be printed
+ *
  * Return: 0
  */
 
