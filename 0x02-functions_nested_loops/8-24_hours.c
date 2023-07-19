@@ -2,7 +2,7 @@
 /* more headers goes there */
 
 /**
- * void jack_bauer - a function
+ * jack_bauer - a function
  *
  * Return: 0
  */
