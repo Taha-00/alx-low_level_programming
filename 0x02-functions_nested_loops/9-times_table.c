@@ -2,7 +2,7 @@
 /* more headers goes there */
 
 /**
- * times table - a function
+ * times_table - a function
  *
  * Return: 0
  */
