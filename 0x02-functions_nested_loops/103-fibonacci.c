@@ -13,8 +13,8 @@ int main(void)
 	long j  = 1;
 	long k = 2;
 	long o = 0;
-	long sum;
-	
+	long sum = 2;
+
 	while (o < 4000000)
 	{
 
