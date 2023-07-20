@@ -10,7 +10,7 @@
 
 void nat_fun(void)
 {
-	int n = 1024;
+	int i;
 	int sum = 0;
 
 	for (i = 1; i < 1024; i++)
