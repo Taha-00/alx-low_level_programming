@@ -5,6 +5,7 @@
 /**
  * print_times_table - a function
  *
+ * @n: input
  * Return: 0
  */
 
@@ -27,9 +28,9 @@ void print_times_table(int n)
 			if (c != n)
 			{
 				putchar(',');
-				if (m / 10 == 0)
+				if ((r * (c + 1)) / 10 == 0)
 					printf("   ");
-				else if (m / 100 == 0)
+				else if ((r * (c + 1)) / 100 == 0)
 					printf("  ");
 				else
 					printf(" ");
