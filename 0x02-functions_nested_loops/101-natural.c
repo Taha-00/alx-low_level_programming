@@ -23,3 +23,4 @@ void nat_fun(void)
 
 	}
 	printf("%d", s);
+}
