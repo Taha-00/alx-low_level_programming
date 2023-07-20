@@ -3,7 +3,7 @@
 /* more headers goes there */
 
 /**
- * nat_fun - a function
+ * main - a function
  *
  * Return: 0
  */
@@ -27,6 +27,6 @@ int main(void)
 		{
 		}
 	}
-	printf("%d", s);
+	printf("%d\n", s);
 	return (0);
 }
