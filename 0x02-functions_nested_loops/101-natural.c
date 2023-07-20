@@ -11,13 +11,15 @@
 void nat_fun(void)
 {
 	int i;
-	int sum = 0;
+	int s = 0;
 
 	for (i = 1; i < 1024; i++)
 	{
 		if (i % 3 == 0)
-			sum = sum + i;
+			s = s + i;
 		else if (i % 5 == 0)
-			sum = sum + i;
+			s = s + i;
+		else
+
 	}
-	printf("%d", sum);
+	printf("%d", s);
