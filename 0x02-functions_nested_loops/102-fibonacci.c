@@ -14,11 +14,11 @@ int main(void)
 	long j  = 1;
 	long k = 2;
 	long o;
-	
+
 	printf("1, 2, ");
 	for (i = 0; i < 48; i++)
 	{
-		
+
 		o = j + k;
 		printf("%ld", o);
 		if (i != 47)
