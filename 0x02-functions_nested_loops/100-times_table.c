@@ -22,24 +22,17 @@ void print_times_table(int n)
 		while (c <= n)
 		{
 			m = r * c;
-			if (m / 10 == 0 && c == 0)
+			printf("%d", m);
+
+			if (c != n)
 			{
-				_putchar(m % 10 + 48);
-			}
-			else if (m / 10 == 0)
-			{
-				_putchar(' ');
-				_putchar(m % 10 + 48);
-			}
-			else
-			{
-				_putchar(m / 10 + 48);
-				_putchar(m % 10 + 48);
-			}
-			if (c != 9)
-			{
-				_putchar(',');
-				_putchar(' ');
+				putchar(',');
+				if (m / 10 == 0)
+					printf("   ");
+				else if (m / 100 == 0)
+					printf("  ");
+				else
+					printf(" ");
 			}
 			c++;
 		}
