@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-void nat_fun(void)
+int main(void)
 {
 	int i;
 	int s = 0;
@@ -28,5 +28,5 @@ void nat_fun(void)
 		}
 	}
 	printf("%d", s);
-	return;
+	return (0);
 }
