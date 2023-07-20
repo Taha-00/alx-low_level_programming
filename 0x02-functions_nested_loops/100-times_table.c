@@ -42,7 +42,8 @@ void print_times_table(int n)
 			}
 			c++;
 		}
-		_putchar('\n');
+		/*_putchar('\n');*/
+		printf("\n");
 		r++;
 	}
 }
