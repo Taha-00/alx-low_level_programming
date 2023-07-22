@@ -4,7 +4,7 @@
 /**
  * print_triangle - a function
  * @size: input
- * Return: 0
+ * Return: nothing
  */
 
 void print_triangle(int size)
