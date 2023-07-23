@@ -2,32 +2,37 @@
 /* more headers goes there */
 
 /**
- * print_triangle - a function
- * @size: input
+ * print_number - a function
+ * @n: input
  * Return: nothing
  */
 
-void print_triangle(int size)
+void print_number(int n)
 {
 	int i;
 	int j;
 	int k;
+	int c = n;
+	int m;
 
-	if (size <= 0)
+	if (n < 0)
 	{
-		_putchar('\n');
-		return;
+		n = n * -1;
+		_putchar('-');
 	}
-	for (i = 0; i < size; i++)
+	for (i = 1; i < n; i++)
 	{
-		for (j = 0; j < size - i - 1; j++)
+		c = c / 10;
+		if (c == 0)
+			break;
+	}
+	for (j = 0; j < i; j++)
+	{
+		m = n;
+		for (k = 0; k < i - j - 1; k++)
 		{
-			_putchar(' ');
+			m = m / 10;
 		}
-		for (k = 0; k < i + 1; k++)
-		{
-			_putchar('#');
-		}
-		_putchar('\n');
+		_putchar(m % 10 + '0');
 	}
 }
