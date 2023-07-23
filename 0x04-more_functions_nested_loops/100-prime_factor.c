@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <math.h>
 /* more headers goes there */
 
 /**
@@ -10,21 +11,20 @@
 
 int main(void)
 {
-	int i;
+	long i;
+	long n = 612852475143;
+	long n2 = n;
+	long k;
 
-	for (i = 1; i <= 100; i++)
+	for ( i = 2; i < sqrt(n); i++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
-			printf("FizzBuzz");
-		else if (i % 3 == 0)
-			printf("Fizz");
-		else if (i % 5 == 0)
-			printf("Buzz");
-		else
-			printf("%d", i);
-		if (i != 100)
-			printf(" ");
+		if (n2 % i == 0)
+		{
+			n2 = n2 / i;
+			k = i;
+			i--;
+		}
 	}
-	printf("\n");
+	printf("%ld\n", k);
 	return (0);
 }
