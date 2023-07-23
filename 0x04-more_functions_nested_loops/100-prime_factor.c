@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <math.h>
+
 /* more headers goes there */
 
 /**
@@ -16,7 +16,7 @@ int main(void)
 	long n2 = n;
 	long k;
 
-	for ( i = 2; i < sqrt(n); i++)
+	for (i = 2; i <= n2; i++)
 	{
 		if (n2 % i == 0)
 		{
