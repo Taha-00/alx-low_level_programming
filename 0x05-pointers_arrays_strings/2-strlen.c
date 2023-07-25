@@ -2,7 +2,7 @@
 /* more headers goes there */
 
 /**
- *strlen - a function
+ *_strlen - a function
  *@s: input a pointer
  * Return: 0
  */
