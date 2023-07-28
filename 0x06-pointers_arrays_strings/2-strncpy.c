@@ -2,21 +2,22 @@
 /* more headers goes there */
 
 /**
- *_strcpy - a function
+ *_strncpy - a function
  *@dest: input
  *@src: input2
+ *@n: number
  * Return: 0
  */
 
-char *_strcpy(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0;
 
-	while (src[i] != '\0')
+	while ((src[i] != '\0') && (i != n))
 	{
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
+	//dest[i] = '\0';
 	return (dest);
 }
