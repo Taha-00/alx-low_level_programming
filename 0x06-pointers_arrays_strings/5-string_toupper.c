@@ -2,29 +2,20 @@
 /* more headers goes there */
 
 /**
- *_strncat - a function
- *@dest: input
- *@src: input2
- *@n: in
+ *string_toupper - a function
+ *@s: input a pointer
  * Return: 0
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *string_toupper(char *s)
 {
-	int dlen = 0;
 	int i = 0;
 
-	while (dest[dlen] != '\0')
+	while (s[i] != '\0')
 	{
-		dlen++;
-	}
-
-	while ((i != n) && (src[i] != '\0'))
-	{
-		dest[dlen] = src[i];
+		if (s[i] >= 'a' && s[i] <= 'z')
+			s[i] = s[i] - 32;
 		i++;
-		dlen++;
 	}
-	dest[dlen + 1] = '\0';
-	return (dest);
+	return (s);
 }
