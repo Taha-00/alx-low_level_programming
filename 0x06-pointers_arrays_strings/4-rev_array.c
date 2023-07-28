@@ -2,22 +2,25 @@
 /* more headers goes there */
 
 /**
- *_strncpy - a function
- *@dest: input
- *@src: input2
- *@n: number
+ *reverse_array - a function
+ *@a: input
+ *@n: input2
+ *
  * Return: 0
  */
 
-char *_strncpy(char *dest, char *src, int n)
+void reverse_array(int *a, int n)
 {
-	int i = 0;
+	int i;
+	int j = n - 1;
+	int tmp;
 
-	while ((src[i] != '\0') && (i != n))
+	for (i = 0; i < n / 2; i++)
 	{
-		dest[i] = src[i];
-		i++;
+		tmp = a[j];
+		a[j] = a[i];
+		a[i] = tmp;
+		j--;
 	}
-	/*dest[i] = '\0';*/
-	return (dest);
+
 }
