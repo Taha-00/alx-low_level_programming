@@ -2,29 +2,27 @@
 /* more headers goes there */
 
 /**
- *_strncat - a function
- *@dest: input
- *@src: input2
- *@n: in
+ *leet - a function
+ *@s: input
+ *
  * Return: 0
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *leet(char *s)
 {
-	int dlen = 0;
+	char sym [] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	char eqs [] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 	int i = 0;
+	int j;
 
-	while (dest[dlen] != '\0')
+	while (s[i] != '\0')
 	{
-		dlen++;
-	}
-
-	while ((i != n) && (src[i] != '\0'))
-	{
-		dest[dlen] = src[i];
+		for (j = 0; j < 10; j++)
+		{
+			if (s[i] == sym[j])
+				s[i] = eqs[j];
+		}
 		i++;
-		dlen++;
 	}
-	dest[dlen + 1] = '\0';
-	return (dest);
+	return (s);
 }
