@@ -1,12 +1,11 @@
-#include <stddef.h>
 #include "main.h"
+
 /* more headers goes there */
 
 /**
- *_memcpy - a function
+ *_strchr - a function
  *@s: input
  *@c: input2
- *
  * Return: string
  */
 
