@@ -1,2 +1,1 @@
-you have to make a readme file :)
-pointers and arrays
+more arrays and pointers
