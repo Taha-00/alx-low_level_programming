@@ -2,28 +2,20 @@
 /* more headers goes there */
 
 /**
- *_strcat - a function
- *@dest: input
- *@src: input2
- * Return: 0
+ *_memset - a function
+ *@s: input
+ *@b: input2
+ *@n: input3
+ * Return: string
  */
 
-char *_strcat(char *dest, char *src)
+char *_memset(char *s, char b, unsigned int n)
 {
-	int dlen = 0;
-	int i = 0;
+	int i;
 
-	while (dest[dlen] != '\0')
+	for (i = 0; i < n; i++)
 	{
-		dlen++;
+		*(s + i) = b;
 	}
-
-	while (src[i] != '\0')
-	{
-		dest[dlen] = src[i];
-		i++;
-		dlen++;
-	}
-	dest[dlen + 1] = '\0';
-	return (dest);
+	return (s);
 }
