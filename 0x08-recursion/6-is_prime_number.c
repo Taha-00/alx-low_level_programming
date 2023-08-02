@@ -2,13 +2,14 @@
 /* more headers goes there */
 
 /**
- *_sqrt_recursion - a function
+ *is_prime_number - a function
  *@n: input
  *
  *
  *Return: no.
  */
 
-int _sqrt_recursion(int n)
+int is_prime_number(int n)
 {
-}	
+	
+}
