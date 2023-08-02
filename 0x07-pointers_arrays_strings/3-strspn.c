@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
 	unsigned int j = 0;
-	int flag = 1;
+	int flag = 0;
 
 	while (s[i] != '\0')
 	{
