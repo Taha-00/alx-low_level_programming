@@ -4,7 +4,7 @@
 /**
  *_sqrt_recursion - a function
  *@n: input
- *
+ *@r: in
  *
  *Return: no.
  */
@@ -19,6 +19,12 @@ int _sqrt_recursion(int n)
 	return (sqrtr(n, n / 2));
 }
 
+/**
+ *sqrtr - a function
+ *@n: input
+ *@r: in
+ *Return: no.
+ */
 int sqrtr(int n, int r)
 {
 	if (r * r == n)
