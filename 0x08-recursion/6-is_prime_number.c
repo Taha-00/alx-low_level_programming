@@ -15,7 +15,7 @@ int prima(int n, int fac);
 int is_prime_number(int n)
 {
 	if (n == 1)
-		return (1);
+		return (0);
 	else if (n < 1)
 		return (0);
 	return (prima(n, 2));
