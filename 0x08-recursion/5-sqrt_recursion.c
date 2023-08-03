@@ -32,6 +32,6 @@ int sqrtr(int n, int r)
 	else
 	{
 		r--;
-		return (sqrtr(n, r));
+		return (sqrtr(n, (n / r + r) / 2));
 	}
 }
