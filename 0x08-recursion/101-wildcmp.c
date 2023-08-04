@@ -10,9 +10,6 @@
  *Return: no.
  */
 
-char *strend(char *s);
-int compstr(char *s, char *e);
-
 int wildcmp(char *s1, char *s2)
 {
 	if (*s2 == *s1)
@@ -26,18 +23,4 @@ int wildcmp(char *s1, char *s2)
 		return (1);
 	}
 	return (0);
-	
-}
-
-/**
- *strend - a function
- *@s: input
- *
- *Return: char.
- */
-char *strend(char *s)
-{
-	if (*s == '\0')
-		return (s - 1);
-	return (strend(s + 1));
 }
