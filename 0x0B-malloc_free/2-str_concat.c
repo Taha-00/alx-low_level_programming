@@ -21,7 +21,11 @@ char *str_concat(char *s1, char *s2)
 	int k;
 
 	if (i == 0 && j == 0)
-		return ("");
+	{
+		s = malloc(sizeof(char));
+		s[0] = '\0';
+		return (s);
+	}
 	s = malloc(sizeof(char) * (i + j + 1));
 	if (s == NULL)
 		return (NULL);
