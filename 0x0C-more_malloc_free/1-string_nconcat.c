@@ -34,9 +34,19 @@ int _strlen(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
-	unsigned int i = _strlen(s1);
-	unsigned int j = _strlen(s2);
+	unsigned int i = 0;
+	unsigned int j = 0;
 	unsigned int k;
+
+	while (s1[i] != '\0')
+                i++;
+	if (s1 == NULL)
+		s1 = "";
+
+	while (s2[j] != '\0')
+                j++;
+	if (s2 == NULL)
+                s2 = "";
 
 	if (n < j)
 		j = n;
