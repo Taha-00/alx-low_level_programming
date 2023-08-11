@@ -4,7 +4,7 @@
 /* more headers goes there */
 
 /**
- *malloc_check - a function
+ *malloc_checked - a function
  *@b: in1
  *
  *
@@ -14,7 +14,8 @@
 void *malloc_checked(unsigned int b)
 {
 	char *m = malloc(b);
+
 	if (m == NULL)
-		exit (98);
+		exit(98);
 	return (m);
 }
