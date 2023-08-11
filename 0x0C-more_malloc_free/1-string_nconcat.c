@@ -3,6 +3,25 @@
 
 /* more headers goes there */
 
+
+/**
+ *_strlen - a function
+ *@s: input a pointer
+ *
+ * Return: 0
+ */
+
+int _strlen(char *s)
+{
+	int i = 0;
+
+	if (s == NULL)
+		return (0);
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
+
 /**
  *string_nconcat - a function
  *@s1: in1
@@ -12,14 +31,13 @@
  *Return: char ptr
  */
 
-int _strlen(char *s);
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
 	unsigned int i = _strlen(s1);
 	unsigned int j = _strlen(s2);
 	unsigned int k;
+
 	if (n < j)
 		j = n;
 
@@ -45,19 +63,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	return (s);
 }
 
-/**
- *_strlen - a function
- *@s: input a pointer
- * Return: 0
- */
 
-int _strlen(char *s)
-{
-	int i = 0;
-
-	if (s == NULL)
-		return (0);
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
