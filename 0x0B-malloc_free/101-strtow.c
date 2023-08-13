@@ -18,7 +18,7 @@ char **strtow(char *str)
 	int i, j, k, kmax;
 
 	i = j = k = kmax = 0;
-	if (str == NULL || str == "")
+	if (str == NULL || str == '\0')
 		return (NULL);
 	while (str[i] != '\0')
 	{
@@ -68,4 +68,5 @@ char **strtow(char *str)
 		}
 		i++;
 	}
+	return (s);
 }
