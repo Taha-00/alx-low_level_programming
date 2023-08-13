@@ -4,57 +4,68 @@
 /* more headers goes there */
 
 /**
- *str_concat - a function
- *@s: in1
+ *strtow - a function
+ *@str: in1
  *
  *
  *Return: char ptr
  */
 
-int _strlen(char *s);
 
-char *str_concat(char *s1, char *s2)
+char **strtow(char *str)
 {
-	char *s;
-	int i = _strlen(s1);
-	int j = _strlen(s2);
-	int k;
+	char **s;
+	int i, j, k, kmax;
 
-	if (i == 0 && j == 0)
-	{
-		s = malloc(sizeof(char));
-		s[0] = '\0';
-		return (s);
-	}
-	s = malloc(sizeof(char) * (i + j + 1));
-	if (s == NULL)
+	i = j = k = kmax = 0;
+	if (str == NULL || str == "")
 		return (NULL);
-
-	for (k = 0; k < i; k++)
+	while (str[i] != '\0')
 	{
-		s[k] = s1[k];
-	}
-	for (k = 0; k < j; k++)
-	{
-	s[k + i] = s2[k];
-	}
-	s[i + j + 1] = '\0';
-	return (s);
-}
-
-/**
- *_strlen - a function
- *@s: input a pointer
- * Return: 0
- */
-
-int _strlen(char *s)
-{
-	int i = 0;
-
-	if (s == NULL)
-		return (0);
-	while (s[i] != '\0')
+		if (str[i] != ' ')
+		{
+			k++;
+			if (kmax < k)
+				kmax = k;
+		}
+		else if (str[i] == ' ' && k != 0)
+		{
+			if (str[i + 1] == ' ')
+			{
+				j = j;
+			}
+			else if (str [i + 1] != '\0')
+			{
+				j++;
+				k = 0;
+			}
+		}
 		i++;
-	return (i);
+	}
+	s = malloc(sizeof(char *) * (j + 1));
+	for (i = 0; i < j; i++)
+		s[i] = malloc(sizeof(char) * kmax);
+	
+	i = j = k = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] != ' ')
+		{
+			s[j][k] = str[i];
+			k++;
+		}
+		else if (str[i] == ' ' && k != 0)
+		{
+			if (str[i + 1] == ' ')
+			{
+				j = j;
+			}
+			else if (str [i + 1] != '\0')
+			{
+				j++;
+				k = 0;
+			}
+		}
+		i++;
+	}
 }
