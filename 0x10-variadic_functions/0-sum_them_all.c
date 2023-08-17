@@ -6,8 +6,8 @@
 /**
  *sum_them_all - a function
  *@n: in
- *
- * Return: nothing
+ *@...: variable in
+ * Retsumm
  */
 
 int sum_them_all(const unsigned int n, ...)
