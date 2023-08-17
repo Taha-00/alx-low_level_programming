@@ -1,13 +1,12 @@
 #include "variadic_functions.h"
-#include <stdio.h>
 #include <stdarg.h>
 /* more headers goes there */
 
 /**
  *sum_them_all - a function
  *@n: in
- *@...: variable in
- * Retsumm
+ *@...: var input
+ * Return: sum
  */
 
 int sum_them_all(const unsigned int n, ...)
